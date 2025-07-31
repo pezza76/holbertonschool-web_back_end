@@ -5,5 +5,3 @@ import math
 def floor(n: float) -> int:
     """Returns Floor of Float"""
     return math.floor(n)
-
-print(floor(3.4))
