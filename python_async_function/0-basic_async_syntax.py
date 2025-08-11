@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
+"""Async function"""
 
 import asyncio
 import random
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay int=10) -> float:
+    """Returns a float"""
     num = random.uniform(1,10)
-    print(f"waiting {num} seconds")
     await asyncio.sleep(num)
-    print('finished')
     return num
 
 asyncio.run(wait_random())
