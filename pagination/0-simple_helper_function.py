@@ -4,7 +4,7 @@
 def index_range(page, page_size):
     """pagination"""
     start = (page - 1) * page_size
-    end = page *  page_size - 1
+    end = page *  page_size
     return start, end
 
 
