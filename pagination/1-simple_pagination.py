@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+"""Module 1"""
 import csv
 from typing import List, Tuple
+
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
@@ -43,5 +45,4 @@ class Server:
         if start >= len(data):
             return []
         return data[start:end]
-
-
+    
