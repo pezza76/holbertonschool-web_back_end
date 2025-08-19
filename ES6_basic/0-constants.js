@@ -4,6 +4,6 @@ export function taskFirst() {
 }
 
 export function taskNext() {
-    let task = 'But sometimes let is okay.';
+    let task = 'But sometimes let is okay';
     return task
 }
