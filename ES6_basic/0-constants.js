@@ -4,6 +4,7 @@ export function taskFirst() {
 }
 
 export function taskNext() {
-  let combination = 'But sometimes let is okay';
+  let combination = "Hello World"
+  combination = 'But sometimes let is okay';
   return combination;
 }
