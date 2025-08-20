@@ -1,22 +1,35 @@
+
 #!/usr/bin/env python3
-"""Async function"""
+"""Module contains function that takes two integers
+
+Imports:
+    List: module for list type annotation
+    wait_random: function delays for n seconds and returns n
+"""
+from typing import List
+random_wait = __import__('0-basic_async_syntax').wait_random
 
 
-module = __import__('0-basic_async_syntax')
+async def wait_n(n: int, max_delay: int) -> List[float]:
+    """Function takes integers and calls wait_random function
 
+    Args:
+        n (int): num of times to call wait_random
+        max_delay (int): Num of seconds to delay wait_random
 
-async def wait_n(n: int, max_delay: int):
-    await async.gather
+    Returns:
+        List[float]: List of wait_random returns
+    """
+    myList: List[float] = []
+    i: int = 0
 
+    while i < n:
+        result = await random_wait(max_delay)
+        myList.append(result)
+        i += 1
 
-
- You will spawn wait_random n times with the specified max_delay.
-
-wait_n should return the list of all the delays (float values). The list of the delays should be 
-in ascending order without using sort() because of concurrency.
-
-
-
-
-
-
+    for end in range(len(myList), 1, -1):
+        for j in range(1, end):
+            if myList[j - 1] > myList[j]:
+                myList[j - 1], myList[j] = myList[j], myList[j - 1]
+    return myList
