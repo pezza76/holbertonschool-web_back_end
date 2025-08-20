@@ -10,7 +10,7 @@ import random
 from typing import AsyncGenerator
 
 
-def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """Function yields certain value between 0 and 10
 
     Yields:
