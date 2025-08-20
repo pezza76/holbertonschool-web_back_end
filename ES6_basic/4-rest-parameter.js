@@ -1,6 +1,3 @@
 export default function returnHowManyArguments(...num) {
   return num.length;
 }
-
-
-console.log(returnHowManyArguments(1,2, 4))
