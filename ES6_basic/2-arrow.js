@@ -7,11 +7,3 @@ export default function getNeighborhoodsList() {
     return self.sanFranciscoNeighborhoods;
   };
 }
-
-const x = new getNeighborhoodsList();
-x.addNeighborhood('The Bronx');
-
-console.log(x);
-
-
-
