@@ -1,6 +1,13 @@
-export default function concatArrays(array1, arr2) {
-  return [...array1, ...arr2]
-} 
+const user = {
+  name: 'Alex',
+  age: 30,
+  city: 'Melbourne'
+};
 
-console.log(concatArrays([1,2], 'hello'))
+for (const key in user) {
+  console.log(key)
+}
 
+for (const key of user) {
+  console.log(key)
+}
