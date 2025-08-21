@@ -1,0 +1,5 @@
+// my comment
+db.school.updateMany(
+    {name: "Holbert school"},
+    {$set: {address: "972 Mission street"}}
+)
