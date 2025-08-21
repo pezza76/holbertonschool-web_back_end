@@ -1,8 +1,9 @@
 export default function createEmployeesObject(departmentName, employees) {
   return {
-    departmentName,
-    employees
+    departmentName: departmentName,
+    employees: employees
   };
 }
 
 
+console.log('hr', 4)
